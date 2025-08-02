@@ -1,0 +1,55 @@
+{
+  "crawl_summary": {
+    "base_url": "https://httpbin.org",
+    "total_pages_crawled": 0,
+    "total_forms_found": 0,
+    "total_api_endpoints": 0,
+    "total_js_files": 0,
+    "crawl_depth_reached": 0,
+    "robots_txt_data": {
+      "robots_url": "https://httpbin.org/robots.txt",
+      "disallowed_paths": [
+        "/deny"
+      ],
+      "allowed_paths": [],
+      "crawl_delay": 0,
+      "content": "User-agent: *\nDisallow: /deny\n"
+    },
+    "subdomain_enumeration_enabled": false,
+    "endpoint_guessing_enabled": false,
+    "hidden_file_scanning_enabled": false,
+    "js_analysis_enabled": true
+  },
+  "forms": {
+    "all_forms": [],
+    "by_method": {}
+  },
+  "api_endpoints": {
+    "all_endpoints": [],
+    "by_type": {}
+  },
+  "javascript_files": [],
+  "cookies": {},
+  "headers": {},
+  "detailed_results": [],
+  "subdomain_enumeration": {
+    "enabled": false,
+    "subdomains_found": [],
+    "total_subdomains": 0
+  },
+  "endpoint_guessing": {
+    "enabled": false,
+    "endpoints_found": [],
+    "total_endpoints": 0
+  },
+  "hidden_file_scanning": {
+    "enabled": false,
+    "hidden_files_found": [],
+    "total_hidden_files": 0
+  },
+  "javascript_analysis": {
+    "enabled": true,
+    "analysis_results": {},
+    "total_analyzed_pages": 0
+  }
+}

@@ -1,6 +1,6 @@
-# Ethical Web Crawler for Penetration Testing
+# Web Crawler for Penetration Testing
 
-A powerful and ethical Python-based web crawler designed for security testing on websites where explicit permission has been granted.
+A powerful Python-based web crawler designed for security testing on websites where explicit permission has been granted.
 
 ## ⚠️ Ethical Warning
 
@@ -65,17 +65,38 @@ The crawler performs read-only operations and does not attempt any destructive a
 - Python 3.8+
 - pip
 
-### Install Dependencies
+## Usage
+
+### Quick Setup
 
 ```bash
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Install Playwright browsers (for JavaScript rendering)
-playwright install chromium
+git clone https://github.com/Aryan-094/CLI-Crawler.git
 ```
 
-## Usage
+```bash
+cd CLI-Crawler
+```
+
+```bash
+chmod +x install.sh
+```
+```bash
+# This will setup the tool and install all dependencies
+sudo ./install.sh
+```
+
+If everything went right, then:
+
+```bash
+# Activate the virtual environment:
+source venv/bin/activate
+
+# Run the test script:
+python test_crawler.py
+
+# Start crawling:
+python crawler.py https://your-website.com
+```
 
 ### Basic Usage
 
@@ -188,26 +209,6 @@ The crawler creates a SQLite database with tables for:
 - `forms`: All discovered forms with fields
 - `api_endpoints`: API endpoints grouped by type
 
-## Ethical Guidelines
-
-### ✅ Permitted Use Cases
-- Testing your own websites
-- Testing websites with explicit written permission
-- Educational purposes on controlled environments
-- Security research with proper authorization
-
-### ❌ Prohibited Use Cases
-- Testing websites without permission
-- Attempting to bypass security measures
-- Performing any destructive actions
-- Brute-force attacks or DoS attempts
-
-### 🔒 Security Features
-- **Read-only operations**: No POST/PUT/DELETE requests
-- **Rate limiting**: Prevents server overload
-- **Respectful crawling**: Honors robots.txt by default
-- **Configurable delays**: Avoids aggressive scanning
-
 ## Integration with Vulnerability Scanners
 
 The structured output is designed to feed directly into vulnerability scanners:
@@ -273,7 +274,7 @@ The crawler generates detailed logs in `crawler.log` for debugging and analysis.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
 
